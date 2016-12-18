@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Reproducibility and Transparency</title>
+    <meta charset="utf-8">
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic');
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body {
+        font-family: 'Gentium Book Basic';
+      }
+      h1, h2 {
+        font-weight: bold;
+      }
+      h3 {
+        font-weight: normal;
+      }
+      a, a > code {
+        color: rgb(113, 121, 236);
+        text-decoration: none;
+      }
+      .footnote {
+        bottom: 3em;
+        align: left;
+        text-align: left;
+        font-size: 66%;
+      }
+      .red {
+        color: red;
+      }
+      .normal {
+        background: #272822;
+        color: #f7f8f2;
+      }
+      .task {
+        background: #272822;
+        border-radius: 5px;
+        padding: .5em;
+        color: #f92672;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+      .remark-slide-number { opacity: 0; }
+      /* Two-column layout */
+      .left-column {
+        color: #777;
+        width: 25%;
+        height: 92%;
+        float: left;
+      }
+      .left-column h3:last-of-type, .left-column h4:last-child {
+          color: #000;
+      }
+      .right-column {
+        width: 70%;
+        float: right;
+        padding-top: 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: right, middle
+
+# If I have seen further it is by standing on the sholders [sic] of Giants..red[*]
+
+
+## [Casey Greene](http://twitter.com/greenescientist)
+## Contribute on [GitHub](https://github.com/greenelab/computational-reagents)
+
+.footnote[.red[*][Letter from Newton to Hooke](https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants#References_during_the_sixteenth_to_nineteenth_centuries)
+expressing a sentiment [earlier attributed to Bernard of Chartres](https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants#Attribution_and_meaning)
+via [wikipedia](https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants).]
+
+---
+
+  You are expected to read this slideshow before we meet and carry ouy any
+  items that look like the following:
+
+.task[
+  - count to ten.
+  - review [Stodden et al.](https://doi.org/10.1126/science.aah6168)
+]
+
+---
+
+# Why make my work reproducible and transparent?
+
+- Reproducibility is a basic principle of science.
+
+- Repeatable workflows make our lives easier.
+
+- We want to graduate one day, so we can't be irreplaceable to our lab.
+
+- You are a science giant and can help others see further.
+
+---
+
+# Why make my work reproducible and transparent?
+
+.task[
+**Before we meet**, carefully consider important reasons and file a
+[pull request](https://github.com/greenelab/computational-reagents/edit/master/index.html)
+to add your own reasons to this slide. If you need more information about how to
+do this, see the [README](https://github.com/greenelab/computational-reagents/).
+Add a new bullet point with:
+- your reason here.
+]
+
+---
+
+layout: false
+.left-column[
+  ### What's needed?
+]
+.right-column[
+I want to be reproducible and transparent. How do I start?
+]
+
+---
+
+layout: false
+.left-column[
+  ### What's needed?
+  #### Source Code
+]
+.right-column[
+Any source code that is used from data collection to the conclusion of your
+analyses. This includes:
+
+- pre-processing code (adapter trimming, etc).
+
+- the nuts and bolts of your analysis.
+
+- code that generates the plots used to compose figures.
+
+This is a non-exclusive list. If you can't get the same results without it,
+you need it.
+]
+
+---
+
+layout: false
+.left-column[
+  ### What's needed?
+  #### Source Code
+  #### Data
+]
+.right-column[
+Any data that you analyze to the extent possible. Some genetic data can not be
+shared without restrictions. In these cases, you should take alternate steps to
+help others confirm that they have the same data. Readers should be able to
+easily obtain:
+
+- any data that does not have sharing restrictions.
+
+- for data that can't be shared, can you compute a
+[hash](https://en.wikipedia.org/wiki/Sha1sum)?
+
+- for data that can't be shared, provide an example file with dummy values.
+
+- the [random seed(s)](https://en.wikipedia.org/wiki/Random_seed) that you used.
+
+This is also a non-exclusive list. If you can't get the same results without it,
+  you need to preserve and, if possible, share it under an
+  [open license](http://opendefinition.org/) that permits re-use.
+]
+
+---
+
+layout: false
+.left-column[
+  ### What's needed?
+  #### Source Code
+  #### Data
+  #### Environment
+]
+.right-column[
+Don't overlook your computing environment. The software that you have installed
+can change the results that you observe. This is particularly true for:
+
+- [versions](http://www.informit.com/articles/article.aspx?p=1439189) of your
+programming language(s).
+
+- [versions](http://scikit-learn.org/stable/whats_new.html#enhancements) of
+packages and software libraries that you use?
+
+- items that are [tied to our understanding of the genome](http://brainarray.mbni.med.umich.edu/Brainarray/Database/CustomCDF/CDF_download.asp).
+
+This is also a non-exclusive list. If you can't get the same results without it,
+  you need to preserve and share it. Ideally under an
+  [open license](https://opensource.org/) that permits re-use.
+]
+
+---
+
+layout: false
+.left-column[
+  ### What's needed?
+  #### Source Code
+  #### Data
+  #### Environment
+  #### Transparency
+]
+.right-column[
+What did you do and when did you do it? The lab notebook is a critically
+important tool for scientists to track and share this information. In the
+computational sciences, we have a number of means available to us. But we have
+to use them carefully! Inadequate use may compromise our ability to nail down
+what we did when.
+
+- [Version control](http://doi.org/10.1371/journal.pcbi.1004947) can record
+what code existed at which time.
+
+- [Preprints](https://doi.org/10.15252/embj.201670030) can result in
+[feedback above and beyond](https://github.com/greenelab/deep-review/issues/110)
+what you receive during peer review. We must aim to get things right. Preprints
+are a tool to help us do this.
+
+]
+
+---
+
+layout: false
+.left-column[
+  ### What's needed?
+  #### Source Code
+  #### Data
+  #### Environment
+  #### Transparency
+  #### Archiving
+]
+.right-column[
+We haven't discussed how you should store and share these items. Digital
+artifacts - that is your source code, data, and compute environemnt - should be
+archived and disseminated. Where can you store these items?
+
+- [Zenodo](http://zenodo.org) offers a service at no cost that connects to
+GitHub to capture releases as citeable objects.
+
+- [figshare](https://figshare.com/) offers a similar service without the GitHub
+API.
+
+- [Institutional repositories](http://repository.upenn.edu/about.html). I'm not
+currently aware of a Penn service designed for code, data, or compute
+environments.
+
+Things that you should look for in an archiving source: Are authors unable to
+delete their own uploads? Does the artifact receive a digital object identifier
+(doi)? [This paper](http://doi.org/10.1371/journal.pcbi.1005097) discusses
+important considerations.
+]
+
+---
+
+# What tools exist to help out?
+
+Find and share:
+.task[
+More than **one week** before we meet, consider tools for reproducible and
+transparent research that you have used or heard of before. Add an
+[issue](https://github.com/greenelab/computational-reagents/issues) for a tool
+that nobody else has filed an issue on yet. Put the tool's name in the issue's
+title. In the issue text, explain whether you think the tool is necessary,
+sufficient, helpful, or irrelevant to transparent and reproducible
+computational research.
+]
+
+And evaluate other contributions:
+
+.task[
+**Before we meet**, comment on at least three other
+[issues](https://github.com/greenelab/computational-reagents/issues). Learn
+about the tool if necessary, and explain whether you think the tool is
+necessary, sufficient, helpful, or irrelevant to transparent and reproducible
+computational research.
+]
+
+---
+
+# Evaluate the literature.
+
+.task[
+Among peer reviewed papers or preprints:
+
+- Find one that you think exemplifies reproducibility and transparency.
+
+- Find one that you think exhibits poor reproducibility, transparency, or both.
+
+- Find one that you are a coauthor on. If you haven't written a paper yet,
+find one from your current lab.
+
+Arrive ready to discuss each paper.
+]
+
+---
+    </textarea>
+    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
