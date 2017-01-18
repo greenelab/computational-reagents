@@ -1,0 +1,30 @@
+### Text of email sent announcing this event
+
+The NIH has announced its intent to require students funded through NRSA
+mechanisms (e.g. F30/31 and training grants) to receive training in specific
+elements of rigor and reproducibility as they relate to experimental design and
+transparency. In response to this announcement, BGS has formulated a training
+program for all students that involves BIOM 611 (or a more advanced statistics
+course depending upon experience), a workshop on resource authentication and
+transparency, and rigor/responsibility-focused lab meetings (see
+https://www.med.upenn.edu/bgs-rcr-exdes/ for details).
+
+The time scheduled for the workshop on resource authentication and transparency
+for GCB 2nd-year PhD students and GCB MD/PhD students at a comparable level is
+Wednesday, February 1 from 2:00 - 3:30 location TBD.
+
+Participants are expected to review this slideshow now:
+https://greenelab.github.io/computational-reagents/
+
+The slideshow contains a number of exercises that participants must carry out
+*BEFORE* the meetings. Specifically, the deadline for the first set of items is
+8:00AM on January 26.
+
+The second set of items are due by 8:00AM on February 1.
+
+Participants are expected to bring laptops to the in person discussion on
+February 1. We aim to produce and disseminate a list of practices that enhance
+or impede reproducibility by the end of the workshop on Feb 1.
+
+Those who do not complete each item by the specified deadlines will not be able
+to participate.
