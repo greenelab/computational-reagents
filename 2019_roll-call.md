@@ -39,7 +39,7 @@ Conflicts in git happen when two commits edit the same lines of text.
 
 <!-- last names starting with H: -->
 
-Daniel Himmelstein: [Manubot](https://manubot.org) for collaboratively writing scholarly documents using git/GitHub.
+- Daniel Himmelstein: [Manubot](https://manubot.org) for collaboratively writing scholarly documents using git/GitHub.
 
 
 <!-- last names starting with I: -->
